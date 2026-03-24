@@ -1,9 +1,5 @@
 # ButtonFlow — Sticky Floating Mobile Button for Call, Messaging & Booking
 
-[![WordPress Requirements](https://img.shields.io/badge/WordPress-6.9.1%2B-0073AA.svg?style=flat-square&logo=wordpress)](https://wordpress.org/download/)
-[![PHP Requirements](https://img.shields.io/badge/PHP-8.0%2B-777BB4.svg?style=flat-square&logo=php)](https://www.php.net/downloads)
-[![License](https://img.shields.io/badge/License-GPL--2.0--or--later-brightgreen.svg?style=flat-square)](LICENSE)
-
 **ButtonFlow** is a lightweight, performance-optimized WordPress plugin designed to add a sticky floating "Call to Action" (CTA) button to websites, specifically for mobile devices. It aims to solve "lead leaks" for local businesses by ensuring a primary contact action (Call, WhatsApp, Booking URL, or Smooth Scroll) is always within thumb-reach as a user scrolls.
 
 ## 🚀 Key Features
@@ -42,7 +38,7 @@ The project follows a modular, object-oriented approach for clean separation of 
 ## 💻 Development Setup
 
 ### Local Environment
-Requires a local WordPress installation (e.g., LocalWP, DevKinsta).
+Requires a local WordPress installation (e.g., LocalWP, Studio by WordPress.com).
 
 ```bash
 # Clone the repository
