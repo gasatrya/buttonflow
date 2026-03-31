@@ -443,12 +443,23 @@ class Settings {
 				</div>
 
 				<div class="buttonflow-settings-preview">
+					<div class="buttonflow-preview-container" style="margin-bottom: 20px;">
+						<h2><?php esc_html_e( 'Live Preview', 'buttonflow' ); ?></h2>
+						<div class="buttonflow-preview-window">
+							<div id="buttonflow-preview-button" class="buttonflow-preview-button">
+								<span class="buttonflow-preview-icon"></span>
+								<span class="buttonflow-preview-label"></span>
+							</div>
+						</div>
+						<p class="description"><?php esc_html_e( 'Note: This is a preview of how the button looks. Positioning and animation only apply on the live site.', 'buttonflow' ); ?></p>
+					</div>
+
 					<div class="buttonflow-sidebar-box" style="margin-bottom: 20px; background: #fff; border: 1px solid #ccd0d4; box-shadow: 0 1px 1px rgba(0,0,0,.04); padding: 20px; border-radius: 4px;">
-						<h2 style="margin-top: 0; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px;"><?php esc_html_e( 'Is Your Site Leaking Revenue?', 'buttonflow' ); ?></h2>
-						<p><?php esc_html_e( 'Take the 2-minute audit to identify the hidden conversion leaks costing you customers.', 'buttonflow' ); ?></p>
+						<h2 style="margin-top: 0; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px;"><?php esc_html_e( 'Is Your Landing Page Losing Sales?', 'buttonflow' ); ?></h2>
+						<p><?php esc_html_e( 'Most local business landing pages fail due to 3 simple mistakes. Use our free Page Grader to find yours and get a personalized report.', 'buttonflow' ); ?></p>
 						<p>
-							<a href="https://www.ctaflow.com/tools/website-health-audit/?utm_source=plugin&utm_medium=buttonflow-sidebar" target="_blank" class="button button-primary" style="width: 100%; text-align: center; box-sizing: border-box;">
-								<?php esc_html_e( 'Get Your Free Audit', 'buttonflow' ); ?>
+							<a href="https://www.ctaflow.com/tools/landing-page-grader/?utm_source=plugin&utm_medium=buttonflow-sidebar" target="_blank" rel="noopener noreferrer" class="button button-primary" style="width: 100%; text-align: center; box-sizing: border-box;">
+								<?php esc_html_e( 'Grade My Page Now', 'buttonflow' ); ?>
 							</a>
 						</p>
 						<hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
@@ -458,17 +469,6 @@ class Settings {
 								<?php esc_html_e( 'Rate this plugin', 'buttonflow' ); ?>
 							</a>
 						</p>
-					</div>
-
-					<div class="buttonflow-preview-container">
-						<h2><?php esc_html_e( 'Live Preview', 'buttonflow' ); ?></h2>
-						<div class="buttonflow-preview-window">
-							<div id="buttonflow-preview-button" class="buttonflow-preview-button">
-								<span class="buttonflow-preview-icon"></span>
-								<span class="buttonflow-preview-label"></span>
-							</div>
-						</div>
-						<p class="description"><?php esc_html_e( 'Note: This is a preview of how the button looks. Positioning and animation only apply on the live site.', 'buttonflow' ); ?></p>
 					</div>
 				</div>
 			</div>

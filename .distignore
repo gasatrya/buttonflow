@@ -1,10 +1,13 @@
 .gitignore
 .distignore
+.gitattributes
+.phpcs-cache
+.git/
+.github/
+.wordpress-org/
 composer.json
 composer.lock
 phpcs.xml.dist
-.phpcs-cache
-.git/
 node_modules/
 package.json
 package-lock.json
@@ -12,3 +15,5 @@ README.md
 /admin/
 AGENTS.md
 GEMINI.md
+LICENSE
+vendor/
