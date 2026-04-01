@@ -23,6 +23,7 @@
   "archive": {
     "exclude": [
       ".git/",
+      ".github/",
       ".gitignore",
       ".distignore",
       ".wordpress-org/",
