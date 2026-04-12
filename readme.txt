@@ -1,5 +1,6 @@
 === ButtonFlow – Sticky Floating Mobile Button for Call, Messaging & Booking ===
 Contributors: gasatrya
+Donate link: https://paypal.me/satrya
 Tags: whatsapp, cta, whatsapp-business, click-to-chat, notification-bar
 Requires at least: 6.5
 Tested up to: 6.9
@@ -46,14 +47,7 @@ No page builder. No theme editing. No code.
 
 This plugin is built with privacy as a priority. No tracking, no external scripts, and no "Powered by" branding. No personal data is collected, stored, or transmitted. Full GDPR compliance out of the box.
 
-= Coming in Pro (v2) =
-
-* Multi-button dock (Call + WhatsApp + Book fan-out on tap)
-* A/B testing — test two CTA labels and auto-promote the winner
-* Session frequency control — hide for visitors who already clicked
-* Click analytics dashboard — clicks, click rate by page, device breakdown
-
-[Read more detail](https://www.ctaflow.com/plugins/buttonflow/)
+[Plugin Page &rarr;](https://www.ctaflow.com/plugins/buttonflow/)
 
 == Installation ==
 
