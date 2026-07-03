@@ -85,12 +85,13 @@ class Renderer {
 		$value   = isset( $options['action_value'] ) ? $options['action_value'] : '#';
 		$icon    = isset( $options['button_icon'] ) ? $options['button_icon'] : 'none';
 
-		$link = $this->get_cta_link( $type, $value, $options );
-		$svg  = $this->get_icon_svg( $icon );
-		$size = isset( $options['button_size'] ) ? $options['button_size'] : 'medium';
+		$link   = $this->get_cta_link( $type, $value, $options );
+		$svg    = $this->get_icon_svg( $icon );
+		$size   = isset( $options['button_size'] ) ? $options['button_size'] : 'medium';
+		$layout = isset( $options['button_layout'] ) ? $options['button_layout'] : 'floating';
 		// Basic HTML structure.
 		?>
-		<div id="buttonflow-bar" class="buttonflow-bar buttonflow-size-<?php echo esc_attr( $size ); ?>">
+		<div id="buttonflow-bar" class="buttonflow-bar buttonflow-size-<?php echo esc_attr( $size ); ?> buttonflow-layout-<?php echo esc_attr( $layout ); ?>">
 			<a href="<?php echo esc_url( $link ); ?>" class="buttonflow-button">
 				<?php if ( $svg ) : ?>
 					<span class="buttonflow-icon">

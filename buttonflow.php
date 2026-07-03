@@ -9,13 +9,13 @@
  *
  * @wordpress-plugin
  * Plugin Name:       ButtonFlow
- * Plugin URI:        https://www.ctaflow.com/plugins/buttonflow/
+ * Plugin URI:        https://gasatrya.com/wp-plugins/buttonflow/
  * Description:       Add a permanent floating CTA button to your site on mobile. One tap to call, book, or message. Zero code required.
- * Version:           1.2.0
+ * Version:           1.3.0
  * Requires at least: 6.5
  * Requires PHP:      8.0
  * Author:            Ga Satrya
- * Author URI:        https://www.ctaflow.com/
+ * Author URI:        https://gasatrya.com/
  * License:           GPL v2 or later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       buttonflow
@@ -26,27 +26,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit();
 }
 
-/**
- * Manual PSR-4 Autoloader
- */
-spl_autoload_register(
-	function ( $class_name ) {
-		$prefix   = 'ButtonFlow\\';
-		$base_dir = __DIR__ . '/includes/';
-
-		$len = strlen( $prefix );
-		if ( 0 !== strncmp( $prefix, $class_name, $len ) ) {
-			return;
-		}
-
-		$relative_class = substr( $class_name, $len );
-		$file           = $base_dir . str_replace( '\\', '/', $relative_class ) . '.php';
-
-		if ( file_exists( $file ) ) {
-			require $file;
-		}
-	}
-);
+// Load class files.
+require_once __DIR__ . '/includes/Core.php';
+require_once __DIR__ . '/includes/Admin/Settings.php';
+require_once __DIR__ . '/includes/Frontend/Renderer.php';
 
 /**
  * Initialize the plugin.

@@ -79,3 +79,15 @@
 .buttonflow-preview-label {
     line-height: 1;
 }
+
+/* Sticky Full-Width Preview */
+.buttonflow-preview-sticky .buttonflow-preview-button {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 0;
+    min-height: 52px;
+    box-sizing: border-box;
+}

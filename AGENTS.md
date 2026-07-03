@@ -36,4 +36,4 @@ composer run phpcbf
 - **Security:** All outputs must be escaped (`esc_html`, `esc_attr`, `esc_url`). All inputs must be sanitized (`sanitize_text_field`, `absint`). Use nonces for admin actions.
 - **No jQuery:** JavaScript must remain dependency-free to ensure maximum performance and compatibility.
 - **Namespacing:** All PHP classes are under the `ButtonFlow` namespace.
-- **Autoloading:** Manual PSR-4 implementation in the main plugin file; avoid manual `require_once` for class files.
+- **Autoloading:** Class files are loaded via explicit `require_once` in the main plugin file. Keep the convention simple — only switch to an autoloader if the plugin grows past ~10 classes.

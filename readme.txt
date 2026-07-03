@@ -4,7 +4,7 @@ Donate link: https://paypal.me/satrya
 Tags: whatsapp, cta, whatsapp-business, click-to-chat, notification-bar
 Requires at least: 6.5
 Tested up to: 7.0
-Stable tag: 1.2.0
+Stable tag: 1.3.0
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -37,6 +37,7 @@ No page builder. No theme editing. No code.
 * **Smooth Scroll** — Scrolls the page to a specific section using an anchor ID (#contact).
 * **Custom Label & Icon** — Set any button text and choose from preset icons (phone, calendar, WhatsApp, message).
 * **Appearance Control** — Customize background color, text color, and choose from 3 button sizes (Small, Medium, Large).
+* **Layout Options** — Choose between a centered Floating button or a Sticky Full-Width bottom bar on mobile.
 * **Live Preview** — See exactly how your button looks in real-time as you edit the settings.
 * **Mobile-Only Display** — The button is never shown on tablets or desktops (CSS + JS dual enforcement).
 * **Page-Level Hide Rules** — Suppress the button on specific pages (e.g., the contact page itself) using slugs or IDs.
@@ -47,7 +48,7 @@ No page builder. No theme editing. No code.
 
 This plugin is built with privacy as a priority. No tracking, no external scripts, and no "Powered by" branding. No personal data is collected, stored, or transmitted. Full GDPR compliance out of the box.
 
-[Plugin Page &rarr;](https://www.ctaflow.com/plugins/buttonflow/)
+[Plugin Page &rarr;](https://gasatrya.com/wp-plugins/buttonflow/)
 
 == Installation ==
 
@@ -90,6 +91,13 @@ No. The CSS and JS files combined weigh less than 5kb and are only loaded on the
 2. The floating CTA button as seen by a mobile visitor.
 
 == Changelog ==
+
+= 1.3.0 =
+* New: Choose between Floating and Sticky Full-Width bottom bar layouts.
+
+= 1.2.1 =
+* Simplified class loading by replacing autoloader with explicit require_once.
+* Updated plugin URLs from ctaflow.com to gasatrya.com.
 
 = 1.2.0 =
 * Modernized JavaScript codebase with ES6+ standards (const/let, arrow functions).

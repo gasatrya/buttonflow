@@ -8,6 +8,7 @@
 - **WhatsApp Integration** — Opens WhatsApp with a pre-filled, customizable message.
 - **Booking & External URLs** — Send visitors directly to your booking page or any external link.
 - **Smooth Scroll** — Scrolls the page to a specific section using an anchor ID (#contact).
+- **Layout Options** — Choose between a centered Floating button or a Sticky Full-Width bottom bar on mobile.
 - **Live Preview** — See exactly how your button looks in real-time as you edit settings in the admin dashboard.
 - **Mobile-Only Display** — Zero desktop bloat. Hidden on screens > 767px via CSS and JS dual-enforcement.
 - **Page-Level Exclusion** — Easily hide the button on specific pages using slugs or IDs.
@@ -27,17 +28,18 @@ The project follows a modular, object-oriented approach for clean separation of 
 
 - `buttonflow.php` — Main plugin entry point and manual PSR-4 autoloader.
 - `includes/` — Core logic and classes.
-    - `Core.php` — Singleton coordinator that initializes Admin and Frontend components.
-    - `Admin/Settings.php` — Handles the WordPress Settings API, sanitization, and the admin UI.
-    - `Frontend/Renderer.php` — Manages frontend HTML injection and dynamic asset enqueuing.
+  - `Core.php` — Singleton coordinator that initializes Admin and Frontend components.
+  - `Admin/Settings.php` — Handles the WordPress Settings API, sanitization, and the admin UI.
+  - `Frontend/Renderer.php` — Manages frontend HTML injection and dynamic asset enqueuing.
 - `assets/` — Frontend and Admin assets.
-    - `css/` — `buttonflow.css` (Floating button) and `admin-settings.css`.
-    - `js/` — `buttonflow.js` (Visibility logic) and `admin-settings.js` (Live preview).
+  - `css/` — `buttonflow.css` (Floating button) and `admin-settings.css`.
+  - `js/` — `buttonflow.js` (Visibility logic) and `admin-settings.js` (Live preview).
 - `languages/` — Translation files (.pot).
 
 ## 💻 Development Setup
 
 ### Local Environment
+
 Requires a local WordPress installation (e.g., LocalWP, Studio by WordPress.com).
 
 ```bash
@@ -49,6 +51,7 @@ composer install
 ```
 
 ### Quality Control
+
 This project strictly follows the **WordPress Coding Standards (WPCS)**.
 
 ```bash
@@ -58,12 +61,6 @@ composer run phpcs
 # Fix auto-fixable errors
 composer run phpcbf
 ```
-
-## 🗺 Roadmap
-
-- [ ] **v1.1:** Multi-button dock (Call + WhatsApp + Book fan-out on tap).
-- [ ] **v1.2:** A/B testing for CTA labels with auto-promotion.
-- [ ] **v1.3:** Click analytics dashboard within the WordPress admin.
 
 ## 📄 License
 

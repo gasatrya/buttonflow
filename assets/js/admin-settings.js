@@ -23,6 +23,7 @@
 		const bgColorInput = document.getElementById('button_color');
 		const textColorInput = document.getElementById('text_color');
 		const sizeSelect = document.getElementById('button_size');
+		const layoutSelect = document.getElementById('button_layout');
 
 		if (!actionTypeSelect || !whatsappMessageField) {
 			return;
@@ -90,6 +91,13 @@
 					iconSvg.style.height = '20px';
 				}
 			}
+			// Layout
+			const previewWindow = previewButton.parentElement;
+			if (layoutSelect.value === 'sticky') {
+				previewWindow.classList.add('buttonflow-preview-sticky');
+			} else {
+				previewWindow.classList.remove('buttonflow-preview-sticky');
+			}
 		};
 
 		const toggleWhatsAppField = () => {
@@ -109,7 +117,7 @@
 		// Event listeners
 		actionTypeSelect.addEventListener('change', toggleWhatsAppField);
 
-		[labelInput, iconSelect, bgColorInput, textColorInput, sizeSelect].forEach((el) => {
+		[labelInput, iconSelect, bgColorInput, textColorInput, sizeSelect, layoutSelect].forEach((el) => {
 			el.addEventListener('input', updatePreview);
 			el.addEventListener('change', updatePreview);
 		});

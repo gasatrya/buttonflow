@@ -209,6 +209,22 @@ class Settings {
 			null,
 			'buttonflow'
 		);
+		add_settings_field(
+			'button_layout',
+			__( 'Layout', 'buttonflow' ),
+			array( $this, 'render_select_field' ),
+			'buttonflow',
+			'buttonflow_style_section',
+			array(
+				'label_for'   => 'button_layout',
+				'options'     => array(
+					'floating' => __( 'Floating', 'buttonflow' ),
+					'sticky'   => __( 'Sticky Full-Width', 'buttonflow' ),
+				),
+				'default'     => 'floating',
+				'description' => __( 'Choose how the button is positioned on mobile.', 'buttonflow' ),
+			)
+		);
 
 		add_settings_field(
 			'button_color',
@@ -312,6 +328,11 @@ class Settings {
 
 		if ( isset( $input['whatsapp_message'] ) ) {
 			$sanitized['whatsapp_message'] = sanitize_text_field( $input['whatsapp_message'] );
+		}
+
+		if ( isset( $input['button_layout'] ) ) {
+			$layout                     = sanitize_key( $input['button_layout'] );
+			$sanitized['button_layout'] = in_array( $layout, array( 'floating', 'sticky' ), true ) ? $layout : 'floating';
 		}
 
 		if ( isset( $input['button_color'] ) ) {
@@ -455,20 +476,29 @@ class Settings {
 					</div>
 
 					<div class="buttonflow-sidebar-box" style="margin-bottom: 20px; background: #fff; border: 1px solid #ccd0d4; box-shadow: 0 1px 1px rgba(0,0,0,.04); padding: 20px; border-radius: 4px;">
-						<h2 style="margin-top: 0; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px;"><?php esc_html_e( 'Is Your Landing Page Losing Sales?', 'buttonflow' ); ?></h2>
-						<p><?php esc_html_e( 'Most local business landing pages fail due to 3 simple mistakes. Use our free Page Grader to find yours and get a personalized report.', 'buttonflow' ); ?></p>
-						<p>
-							<a href="https://www.ctaflow.com/tools/landing-page-grader/?utm_source=plugin&utm_medium=buttonflow-sidebar" target="_blank" rel="noopener noreferrer" class="button button-primary" style="width: 100%; text-align: center; box-sizing: border-box;">
-								<?php esc_html_e( 'Grade My Page Now', 'buttonflow' ); ?>
+					<h2 style="margin-top: 0; font-size: 14px; border-bottom: 1px solid #eee; padding-bottom: 10px;"><?php esc_html_e( 'Need a WordPress Developer?', 'buttonflow' ); ?></h2>
+					<p><?php esc_html_e( 'I build custom plugins, themes, and high-performance WordPress sites for businesses that need more than off-the-shelf solutions.', 'buttonflow' ); ?></p>
+					<p>
+						<a href="https://gasatrya.com/?utm_source=plugin&amp;utm_medium=buttonflow-sidebar" target="_blank" rel="noopener noreferrer" class="button button-primary" style="width: 100%; text-align: center; box-sizing: border-box;">
+							<?php esc_html_e( 'Hire Me', 'buttonflow' ); ?>
+						</a>
+					</p>
+					<hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
+					<p style="margin-bottom: 0; display: flex; align-items: center; gap: 12px;">
+						<span>
+							<span class="dashicons dashicons-coffee" style="color: #C9A96E; vertical-align: middle;"></span>
+							<a href="https://gasatrya.com/donate/?utm_source=plugin&amp;utm_medium=buttonflow-sidebar" target="_blank" style="text-decoration: none; vertical-align: middle;">
+								<?php esc_html_e( 'Buy me a coffee', 'buttonflow' ); ?>
 							</a>
-						</p>
-						<hr style="border: 0; border-top: 1px solid #eee; margin: 20px 0;">
-						<p style="margin-bottom: 0;">
+						</span>
+						<span style="color: #ccd0d4;">&middot;</span>
+						<span>
 							<span class="dashicons dashicons-star-filled" style="color: #ffb900; vertical-align: middle;"></span>
 							<a href="https://wordpress.org/support/plugin/buttonflow/reviews/#new-post" target="_blank" style="text-decoration: none; vertical-align: middle;">
 								<?php esc_html_e( 'Rate this plugin', 'buttonflow' ); ?>
 							</a>
-						</p>
+						</span>
+					</p>
 					</div>
 				</div>
 			</div>
