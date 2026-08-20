@@ -3,8 +3,8 @@ Contributors: gasatrya
 Donate link: https://paypal.me/satrya
 Tags: whatsapp, cta, whatsapp-business, click-to-chat, notification-bar
 Requires at least: 6.5
-Tested up to: 7.0
-Stable tag: 1.3.0
+Tested up to: 7.1
+Stable tag: 1.3.1
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -91,6 +91,9 @@ No. The CSS and JS files combined weigh less than 5kb and are only loaded on the
 2. The floating CTA button as seen by a mobile visitor.
 
 == Changelog ==
+
+= 1.3.1 =
+* Updated WordPress compatibility declaration through version 7.1.
 
 = 1.3.0 =
 * New: Choose between Floating and Sticky Full-Width bottom bar layouts.
